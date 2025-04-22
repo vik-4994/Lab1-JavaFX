@@ -15,26 +15,35 @@ public class Main extends Application {
         Pane pane = new Pane();
         pane.setStyle("-fx-background-color: lightgray;");
 
-        Rectangle body = new Rectangle(150, 100, 100, 200);
+        Rectangle head = new Rectangle(160, 100, 80, 50);
+        head.setFill(Color.BLUE);
+
+        Rectangle body = new Rectangle(125, 150, 150, 100);
         body.setFill(Color.BLUE);
 
-        Rectangle leftArm = new Rectangle(100, 130, 50, 50);
+        Rectangle leftArm = new Rectangle(90, 150, 60, 75);
         leftArm.setFill(Color.BLUE);
 
-        Rectangle rightArm = new Rectangle(250, 130, 50, 50);
+        Rectangle rightArm = new Rectangle(250, 150, 60, 65);
         rightArm.setFill(Color.BLUE);
 
-        Rectangle leftLeg = new Rectangle(160, 300, 30, 50);
+        Rectangle leftLeg = new Rectangle(125, 250, 45, 80);
         leftLeg.setFill(Color.BLUE);
 
-        Rectangle rightLeg = new Rectangle(210, 300, 30, 50);
+        Rectangle rightLeg = new Rectangle(235, 250, 40, 80);
         rightLeg.setFill(Color.BLUE);
 
-        Rectangle leftEye = new Rectangle(180, 120, 30, 5);
+        Rectangle leftEye = new Rectangle(185, 120, 7.5, 7.5);
         leftEye.setFill(Color.YELLOW);
 
-        Rectangle rightEye = new Rectangle(220, 120, 30, 5);
+        Rectangle rightEye = new Rectangle(215, 120, 7.5, 7.5);
         rightEye.setFill(Color.YELLOW);
+
+        Rectangle leftFoot = new Rectangle(170, 310, 10, 20);
+        leftFoot.setFill(Color.BLUE);
+
+        Rectangle rightFoot = new Rectangle(275, 310, 10, 20);
+        rightFoot.setFill(Color.BLUE);
 
         Polygon leftHorn = new Polygon(150, 100, 130, 80, 150, 60);
         leftHorn.setFill(Color.BLUE);
@@ -42,7 +51,7 @@ public class Main extends Application {
         Polygon rightHorn = new Polygon(250, 100, 270, 80, 250, 60);
         rightHorn.setFill(Color.BLUE);
 
-        pane.getChildren().addAll(body, leftArm, rightArm, leftLeg, rightLeg, leftEye, rightEye, leftHorn, rightHorn);
+        pane.getChildren().addAll(head, body, leftArm, rightArm, leftLeg, rightLeg, leftEye, rightEye, leftHorn, rightHorn, leftFoot, rightFoot);
 
         Scene scene = new Scene(pane, 400, 400);
         primaryStage.setTitle("Monster");
