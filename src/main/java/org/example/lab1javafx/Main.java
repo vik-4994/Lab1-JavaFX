@@ -16,22 +16,22 @@ public class Main extends Application {
         pane.setStyle("-fx-background-color: lightgray;");
 
         Rectangle head = new Rectangle(160, 100, 80, 50);
-        head.setFill(Color.BLUE);
+        head.setFill(Color.rgb(128, 0, 255));
 
         Rectangle body = new Rectangle(125, 150, 150, 100);
-        body.setFill(Color.BLUE);
+        body.setFill(Color.rgb(128, 0, 255));
 
         Rectangle leftArm = new Rectangle(90, 150, 60, 75);
-        leftArm.setFill(Color.BLUE);
+        leftArm.setFill(Color.rgb(128, 0, 255));
 
         Rectangle rightArm = new Rectangle(250, 150, 60, 65);
-        rightArm.setFill(Color.BLUE);
+        rightArm.setFill(Color.rgb(128, 0, 255));
 
         Rectangle leftLeg = new Rectangle(125, 250, 45, 80);
-        leftLeg.setFill(Color.BLUE);
+        leftLeg.setFill(Color.rgb(128, 0, 255));
 
         Rectangle rightLeg = new Rectangle(235, 250, 40, 80);
-        rightLeg.setFill(Color.BLUE);
+        rightLeg.setFill(Color.rgb(128, 0, 255));
 
         Rectangle leftEye = new Rectangle(185, 120, 7.5, 7.5);
         leftEye.setFill(Color.YELLOW);
@@ -40,15 +40,15 @@ public class Main extends Application {
         rightEye.setFill(Color.YELLOW);
 
         Rectangle leftFoot = new Rectangle(170, 310, 10, 20);
-        leftFoot.setFill(Color.BLUE);
+        leftFoot.setFill(Color.rgb(128, 0, 255));
 
         Rectangle rightFoot = new Rectangle(275, 310, 10, 20);
-        rightFoot.setFill(Color.BLUE);
+        rightFoot.setFill(Color.rgb(128, 0, 255));
 
-        Polygon leftHorn = new Polygon(150, 100, 130, 80, 150, 60);
+        Polygon leftHorn = new Polygon(162, 100, 162, 70, 135, 85);
         leftHorn.setFill(Color.BLUE);
 
-        Polygon rightHorn = new Polygon(250, 100, 270, 80, 250, 60);
+        Polygon rightHorn = new Polygon(238, 100, 270, 100, 240, 75);
         rightHorn.setFill(Color.BLUE);
 
         pane.getChildren().addAll(head, body, leftArm, rightArm, leftLeg, rightLeg, leftEye, rightEye, leftHorn, rightHorn, leftFoot, rightFoot);
